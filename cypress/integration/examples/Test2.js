@@ -18,6 +18,11 @@ describe("My Second Test Suite", function () {
           $el.find("button").click();
         }
       });
+      cy.get('.cart-icon > img').click()
+      cy.contains('PROCEED TO CHECKOUT').click()
+      //or 👇
+      //cy.get('.products-wrapper')
+      cy.contains('Place Order').click()
 
     //fixture
   });
